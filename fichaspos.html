@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>La posmodernidad</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    
+    <link rel="shortcut icon" type="image/x-icon" href="logo.jpg">
+  </head>
+	<style>
+		/* Estilos CSS para la página */
+		button {
+ position: relative;
+ padding: 1em 1.8em;
+ outline: none;
+ border: 1px solid #303030;
+ background: #212121;
+ color: #ae00ff;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ font-size: 15px;
+ overflow: hidden;
+ transition: 0.2s;
+ border-radius: 20px;
+ cursor: pointer;
+ font-weight: bold;
+ width: 200px;
+ height: 100px;
+ font-color:white;
+}
+
+button:hover {
+ box-shadow: 0 0 10px #ae00ff, 0 0 25px #001eff, 0 0 50px #ae00ff;
+ transition-delay: 0.6s;
+}
+
+button span {
+ position: absolute;
+}
+
+button span:nth-child(1) {
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(1) {
+ left: 100%;
+ transition: 0.7s;
+}
+
+button span:nth-child(3) {
+ bottom: 0;
+ right: -100%;
+ width: 100%;
+ height: 2px;
+ background: linear-gradient(90deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(3) {
+ right: 100%;
+ transition: 0.7s;
+ transition-delay: 0.35s;
+}
+
+button span:nth-child(2) {
+ top: -100%;
+ right: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(180deg, transparent, #ae00ff);
+}
+
+button:hover span:nth-child(2) {
+ top: 100%;
+ transition: 0.7s;
+ transition-delay: 0.17s;
+}
+
+button span:nth-child(4) {
+ bottom: -100%;
+ left: 0;
+ width: 2px;
+ height: 100%;
+ background: linear-gradient(360deg, transparent, #001eff);
+}
+
+button:hover span:nth-child(4) {
+ bottom: 100%;
+ transition: 0.7s;
+ transition-delay: 0.52s;
+}
+
+button:active {
+ background: #ae00af;
+ background: linear-gradient(to top right, #ae00af, #001eff);
+ color: #bfbfbf;
+ box-shadow: 0 0 8px #ae00ff, 0 0 8px #001eff, 0 0 8px #ae00ff;
+ transition: 0.1s;
+}
+
+button:active span:nth-child(1) 
+span:nth-child(2) 
+span:nth-child(2) 
+span:nth-child(2) {
+ transition: none;
+ transition-delay: none;
+}
+.wrapper {
+  height: 15vh;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0px solid;
+  font-family: monospace;
+  font-size: 4em;
+  
+  color: white;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+		.animacion {
+			animation: mover 1s infinite alternate;
+			transform: scale(0.75);
+		}
+		@keyframes mover {
+			from { transform: translateX(0); }
+			to { transform: translateX(20px); }
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary " navbar bg-dark data-bs-theme="dark" style="margin-top: -25px">
+  <nav class="navbar bg-body-tertiary" style="margin: 20px">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="file:///C:/Users/juanp/Downloads/pagina%20web%20princi.html">
+      <img src="filo.jpg" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" style="margin-right: 20px">
+     
+    </a>
+  </div>
+</nav>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><font face= monospace>FILOSOFIA</font></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link  text-white" style="margin: 20px" href="#Conceptos" ><font face= monospace>EXISTENCIALISMO</font></a>
+  </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-white " style="margin: 20px" href="#Conceptos"><font face= monospace>POSMODERNIDAD</font></a>
+        </li>
+        <li class="nav-item">
+    <a class="nav-link text-white  " style="margin: 20px"  href="#cartas" ><font face= monospace>AUTORES</font></a>
+  </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" style="margin: 20px"  href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <font face= monospace>FICHAS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item text-white" href="#">Existencialismo</a></li>
+            <li><a class="dropdown-item text-white"  href="fichas2.html">Posmodernidad</a></li></ul></font>
+            
+          </ul> 
+        </li>
+   
+      </ul>
+   
+    </div>
+    
+  </div>
+ 
+<svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" color=white>
+   <a href="#cartas">
+  <path d="M3 12h18"></path>
+  <path d="M3 6h18"></path>
+  <path d="M3 18h18"></path>
+ / 
+</svg>
+  
+
+</nav>
+<div class="wrapper">
+    <div class="typing-demo">
+    FILOSOFIA POSMODERNA
+    </div>
+</div>
+	<a href="ficha1pos.html">
+	<button class="animacion"style="margin-left: 50px">
+		
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> <font color=white>Ficha #1</font></button></a>
+</button>
+<a href="ficha2pos.html">
+		<button class="animacion"style="margin-left: 50px">
+			
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> <font color=white>Ficha #2</font></button></a>
+</button>
+<a href="ficha3pos.html">
+		<button class="animacion"style="margin-left: 50px">
+			
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> <font color=white>Ficha #3</font></button></a>
+</button>
+<a href="ficha4pos.html">
+		<button class="animacion"style="margin-left: 50px">
+			
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> <font color=white>Ficha #4</font></button></a>
+</button>
+<a href="ficha5pos.html">
+	<button class="animacion"style="margin-left: 50px">
+		
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> <font color=white>Ficha #5</font></button></a>
+</button>
+<a href="ficha6pos.html">
+	<button class="animacion"style="margin-left: 50px; margin-left: 400px; margin-top: 30px;">
+		
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> <font color=white>Ficha #6</font></button></a>
+</button>
+<a href="ficha7pos.html">
+	<button class="animacion"style="margin-left: 50px">
+		
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span> <font color=white>Ficha #7</font></button></a>
+</button>
+		
+		
+	</body>
+	</html>
+
